@@ -33,7 +33,10 @@
 // !DRAW_WITH_BITMAP performs horribly on OSX.  Historically the WXWIN
 // situation was the opposite, but on my win7 machine, both approaches
 // are about the same performance.
-#ifdef __WXMAC__
+#ifdef WINDOWS
+    #define DRAW_WITH_RAWBMP 0
+    #define USE_FILE_BEEPS 0
+#else
     // construct the m_scrbits image via the rawbmp.h interface.
     // the performance is glacial on OSX platform if this is not set.
     // (eg, running KALEIDOS, lots of non-blank characters), emulated
@@ -42,9 +45,6 @@
     // this really isn't a choice. wxSound on OSX doesn't support an
     // internally generated wav file.
     #define USE_FILE_BEEPS 1
-#else
-    #define DRAW_WITH_RAWBMP 0
-    #define USE_FILE_BEEPS 0
 #endif
 
 // ========================================================================
