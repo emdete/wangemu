@@ -255,7 +255,7 @@ system2200::initialize()
     SysCfgState ini_cfg;
     ini_cfg.loadIni();
     if (!ini_cfg.configOk(false)) {
-        UI_warn(".ini file wasn't usable -- using a default configuration");
+        // UI_warn(".ini file wasn't usable -- using a default configuration");
         ini_cfg.setDefaults();
     }
     setConfig(ini_cfg);
