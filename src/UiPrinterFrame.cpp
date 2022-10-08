@@ -146,7 +146,7 @@ PrinterFrame::PrinterFrame(const wxString& title, const int io_addr) :
                 wxDEFAULT_FRAME_STYLE | wxNO_FULL_REPAINT_ON_RESIZE),
     m_printer_addr(io_addr)   // used later during configuration
 {
-#ifndef __WXMAC__
+#ifdef WINDOWS
     // set the frame icon
     SetIcon(wxICON(wang));
 #endif
