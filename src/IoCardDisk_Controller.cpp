@@ -36,6 +36,7 @@
 #include "Ui.h"           // for UI_Alert()
 #include "Wvd.h"
 #include "host.h"         // for dbglog()
+#include <cstring>
 
 #include <algorithm>      // for std::min, std::max
 

@@ -6,6 +6,7 @@
 #include "Ui.h"
 #include "Wvd.h"
 #include "host.h"              // for dbglog()
+#include <cstring>
 
 #include <fstream>
 

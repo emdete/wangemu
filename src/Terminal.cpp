@@ -31,6 +31,7 @@
 #include "Ui.h"
 #include "host.h"              // for dbglog()
 #include "system2200.h"
+#include <cstring>
 
 bool do_debug = false;
 

@@ -12,6 +12,7 @@
 #include "ScriptFile.h"
 #include "Ui.h"                 // needed for UI_Alert()
 #include "tokens.h"             // predigested keyword tokens
+#include <cstring>
 
 #include <cctype>
 #include <sstream>
